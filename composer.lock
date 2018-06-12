@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "595b34d31566376c3521503a1c3d1b2a",
-    "content-hash": "c267b48ce7e8479d046c84d265a0788a",
+    "hash": "d7c0dfc92c18c0290bb2153d62326177",
+    "content-hash": "967231693ae5be538f0904dd063f78dc",
     "packages": [
         {
             "name": "aura/intl",
@@ -452,6 +452,53 @@
                 "php mobile detect"
             ],
             "time": "2018-06-03 13:13:04"
+        },
+        {
+            "name": "multidimensional/cakephp-subdomains",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/multidimension-al/cakephp-subdomains.git",
+                "reference": "657bb1d4afbb5afb6f279f5afa7bcf5c88ee326a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/multidimension-al/cakephp-subdomains/zipball/657bb1d4afbb5afb6f279f5afa7bcf5c88ee326a",
+                "reference": "657bb1d4afbb5afb6f279f5afa7bcf5c88ee326a",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.3",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Multidimensional\\Subdomains\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "multidimension.al",
+                    "homepage": "https://multidimension.al",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily add sub domains to your CakePHP application using route prefixes.",
+            "homepage": "https://github.com/multidimension-al/cakephp-subdomains",
+            "keywords": [
+                "cakephp",
+                "cakephp3",
+                "subdomains"
+            ],
+            "time": "2017-01-07 03:04:11"
         },
         {
             "name": "psr/http-message",

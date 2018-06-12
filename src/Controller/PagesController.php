@@ -18,6 +18,8 @@ use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
+use Cake\Mailer\Email;
+
 
 /**
  * Static content controller
@@ -69,5 +71,13 @@ class PagesController extends AppController
 
     public function index(){
         $this->viewBuilder()->setLayout('main');
+        if ($this->request->is('post')) {
+
+            $email = new Email('default');
+            $email->from(['me@example.com' => 'My Site'])
+                ->to('rex@123789.org')
+                ->subject('About')
+                ->send('My message');
+        }
     }
 }

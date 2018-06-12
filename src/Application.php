@@ -33,6 +33,8 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('Multidimensional/Subdomains', ['bootstrap' => true, 'routes' => true]);
+
         // Call parent to load bootstrap from files.
         parent::bootstrap();
     }

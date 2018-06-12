@@ -247,18 +247,12 @@
                 <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>AWESOME</span></h2>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-                <form action="#" method="post" id="contactForm">
-                    <label>NAME</label>
-                    <input name="fullname" type="text" class="validate[required] form-control" id="fullname">
-
-                    <label>EMAIL</label>
-                    <input name="email" type="email" class="validate[required,custom[email]] form-control" id="email">
-
-                    <label>MESSAGE</label>
-                    <textarea name="message" rows="4" class="validate[required] form-control" id="message"></textarea>
-
-                    <input type="submit" class="form-control">
-                </form>
+                <?= $this->Form->create('',['id' => 'contactForm' ]) ?>
+                <?= $this->Form->control('name',['class' => 'validate[required] form-control']); ?>
+                <?= $this->Form->control('email', ['type' => 'email', 'class' => 'validate[required,custom[email]] form-control']); ?>
+                <?= $this->Form->control('message',['type' => 'textarea','rows' => '4','class' => 'validate[required] form-control']); ?>
+                <?= $this->Form->control('Submit',['type' => 'submit','class' => 'form-control']); ?>
+                <?= $this->Form->end(); ?>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
                 <address>
